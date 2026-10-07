@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Tuned | Suman Sarkar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .stay-tuned-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stay-tuned-card {
+            background: rgba(18, 18, 22, 0.78);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+            padding: 60px 40px;
+            max-width: 580px;
+            width: 100%;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(229, 9, 20, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            animation: fadeInCard 0.8s ease forwards;
+        }
+
+        @keyframes fadeInCard {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            background: rgba(229, 9, 20, 0.12);
+            border: 1px solid rgba(229, 9, 20, 0.4);
+            color: var(--crimson);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--crimson);
+            box-shadow: 0 0 8px var(--crimson);
+            animation: pulseGlow 1.5s infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.4); }
+        }
+
+        .stay-tuned-title {
+            font-family: var(--font-heading);
+            font-size: clamp(38px, 6vw, 62px);
+            line-height: 1.05;
+            letter-spacing: 2px;
+            color: #fff;
+            margin: 4px 0;
+        }
+
+        .stay-tuned-subtitle {
+            font-size: 15px;
+            color: #a1a1aa;
+            line-height: 1.6;
+            max-width: 440px;
+        }
+
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--crimson);
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 14px 34px;
+            border-radius: 9999px;
+            box-shadow: 0 4px 20px var(--crimson-glow);
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .back-home-btn:hover {
+            background: #ff1f2d;
+            box-shadow: 0 6px 30px rgba(229, 9, 20, 0.6);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Frosted Glass Navbar -->
+    <header class="floating-nav-header">
+        <nav class="floating-nav-pill">
+            <a href="index.html#about" class="nav-item">About</a>
+            <a href="stay-tuned.html?item=Projects" class="nav-item" id="nav-projects">Projects</a>
+            <a href="index.html#about" class="nav-item">Services</a>
+            <a href="stay-tuned.html?item=Testimonials" class="nav-item" id="nav-testimonials">Testimonials</a>
+            <a href="index.html#contact" class="nav-item">Contact</a>
+        </nav>
+    </header>
+
+    <div class="stay-tuned-wrapper">
+        <div class="stay-tuned-card">
+            <div class="status-pill">
+                <span class="pulse-dot"></span>
+                <span id="page-item-label">Coming Soon</span>
+            </div>
+
+            <h1 class="stay-tuned-title">
+                IT IS NOT UPDATED YET<br>
+                <span class="text-crimson">STAY TUNED!</span>
+            </h1>
+
+            <p class="stay-tuned-subtitle">
+                This section is currently being crafted and updated with exciting new content. Check back soon!
+            </p>
+
+            <a href="index.html" class="back-home-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>BACK TO HOME</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Read URL params if a specific section was clicked
+        const urlParams = new URLSearchParams(window.location.search);
+        const item = urlParams.get('item');
+        if (item) {
+            document.getElementById('page-item-label').textContent = item.toUpperCase() + ' • IN PROGRESS';
+            if (item.toLowerCase() === 'projects') {
+                const el = document.getElementById('nav-projects');
+                if (el) el.classList.add('active');
+            } else if (item.toLowerCase() === 'testimonials') {
+                const el = document.getElementById('nav-testimonials');
+                if (el) el.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

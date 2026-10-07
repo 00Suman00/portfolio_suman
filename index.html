@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman Sarkar | Web Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed Background Canvas for Smooth Scroll-Driven Video Scrubbing -->
+    <div class="canvas-container">
+        <canvas id="hero-lightpass"></canvas>
+        <div class="canvas-vignette"></div>
+    </div>
+
+    <!-- Tech Side Decorations -->
+    <div class="tech-deco tech-deco-left" aria-hidden="true">
+        <canvas id="tech-canvas-left" class="tech-canvas"></canvas>
+    </div>
+    <div class="tech-deco tech-deco-right" aria-hidden="true">
+        <canvas id="tech-canvas-right" class="tech-canvas"></canvas>
+    </div>
+
+    <!-- Foreground Content Sections -->
+    <div class="content-wrapper">
+
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero-section" id="hero">
+
+
+            <div class="hero-grid">
+                <!-- Left Hero Column -->
+                <div class="hero-left">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">
+                        SUMAN<br>
+                        <span class="text-crimson">SARKAR</span>
+                    </h1>
+                    <h2 class="hero-title">
+                        WEB <span class="text-crimson">DEVELOPER</span>
+                    </h2>
+                    <p class="hero-desc">
+                        Building fast, modern & high-converting websites that help businesses grow online and stand out.
+                    </p>
+                    <div class="hero-location-pill">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>India &bull; Kolkata</span>
+                    </div>
+                </div>
+
+                <!-- Center Spacer -->
+                <div class="hero-center-spacer"></div>
+
+                <!-- Right: Zigzag Floating Nav Pills -->
+                <div class="hero-right">
+
+                    <!-- Pill 1: ZAG right -->
+                    <a href="#about" class="feature-pill" data-zag="right">
+                        <div class="pill-label">
+                            <span class="pill-top">ABOUT</span>
+                            <span class="pill-bottom">WHO I AM</span>
+                        </div>
+                        <div class="pill-icon-circle pic-about">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                    </a>
+
+                    <!-- Pill 2: ZIG left -->
+                    <a href="stay-tuned.html?item=Projects" class="feature-pill" data-zag="left">
+                        <div class="pill-label">
+                            <span class="pill-top">PROJECTS</span>
+                            <span class="pill-bottom">MY WORK</span>
+                        </div>
+                        <div class="pill-icon-circle pic-projects">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                    </a>
+
+                    <!-- Pill 3: ZAG right -->
+                    <a href="#about" class="feature-pill" data-zag="right">
+                        <div class="pill-label">
+                            <span class="pill-top">SERVICES</span>
+                            <span class="pill-bottom">WHAT I DO</span>
+                        </div>
+                        <div class="pill-icon-circle pic-services">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                    </a>
+
+                    <!-- Pill 4: ZIG left -->
+                    <a href="#contact" class="feature-pill" data-zag="left">
+                        <div class="pill-label">
+                            <span class="pill-top">CONTACT</span>
+                            <span class="pill-bottom">GET IN TOUCH</span>
+                        </div>
+                        <div class="pill-icon-circle pic-contact">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT & SERVICES SECTION ================= -->
+        <section class="about-services-section" id="about">
+            <div class="about-services-grid">
+                
+                <!-- Left: About Me -->
+                <div class="about-column">
+                    <div class="section-tag-row">
+                        <span class="section-tag">ABOUT ME</span>
+                    </div>
+                    <h2 class="about-heading">Hello....<br><span class="text-crimson">I am Suman Sarkar</span></h2>
+                    <p class="about-text">
+                        I'm a Web Developer passionate about creating fast, modern, and high-converting eCommerce websites. I also specialize in Meta Ads and helping businesses grow their online presence.
+                    </p>
+
+                    <div class="about-perks-grid">
+                        <div class="perk-item">
+                            <i class="fa-solid fa-globe perk-icon"></i>
+                            <div class="perk-text">
+                                <span class="perk-line-1">AVAILABLE</span>
+                                <span class="perk-line-2">WORLDWIDE</span>
+                            </div>
+                        </div>
+
+                        <div class="perk-item">
+                            <i class="fa-regular fa-clock perk-icon"></i>
+                            <div class="perk-text">
+                                <span class="perk-line-1">AVAILABLE FOR</span>
+                                <span class="perk-line-2">FREELANCE PROJECTS</span>
+                            </div>
+                        </div>
+
+                        <div class="perk-item">
+                            <i class="fa-solid fa-pencil-ruler perk-icon"></i>
+                            <div class="perk-text">
+                                <span class="perk-line-1">CLEAN & MODERN</span>
+                                <span class="perk-line-2">DESIGNS</span>
+                            </div>
+                        </div>
+
+                        <div class="perk-item">
+                            <i class="fa-regular fa-calendar-check perk-icon"></i>
+                            <div class="perk-text">
+                                <span class="perk-line-1">ON-TIME DELIVERY</span>
+                                <span class="perk-line-2">EVERY TIME</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signature-box">
+                        <span class="signature-text">Suman Sarkar</span>
+                    </div>
+                </div>
+
+                <!-- Right: Services -->
+                <div class="services-column">
+                    <div class="services-header-row">
+                        <div class="header-line"></div>
+                        <h2 class="services-title">SERVICES</h2>
+                        <div class="header-line"></div>
+                    </div>
+
+                    <div class="services-grid">
+                        <!-- Card 1 -->
+                        <div class="service-card">
+                            <div class="service-icon-box code-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="service-name">WEB DEVELOPMENT</h3>
+                            <p class="service-desc">Custom, responsive and high-performance websites.</p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="service-card">
+                            <div class="service-icon-box shopify-icon">
+                                <i class="fa-brands fa-shopify"></i>
+                            </div>
+                            <h3 class="service-name">SHOPIFY STORE</h3>
+                            <p class="service-desc">Professional Shopify stores that convert and scale.</p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="service-card">
+                            <div class="service-icon-box uiux-icon">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <h3 class="service-name">UI/UX DESIGN</h3>
+                            <p class="service-desc">Clean, modern and user-friendly designs that engage users.</p>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="service-card">
+                            <div class="service-icon-box meta-icon">
+                                <i class="fa-brands fa-meta"></i>
+                            </div>
+                            <h3 class="service-name">META ADS</h3>
+                            <p class="service-desc">Targeted ad campaigns that drive traffic and sales.</p>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="service-card">
+                            <div class="service-icon-box speed-icon">
+                                <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                            <h3 class="service-name">SPEED OPTIMIZATION</h3>
+                            <p class="service-desc">Lightning-fast websites for better user experience.</p>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="service-card">
+                            <div class="service-icon-box seo-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <h3 class="service-name">SEO OPTIMIZATION</h3>
+                            <p class="service-desc">On-page SEO to rank higher and grow organic traffic.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= ACHIEVEMENTS SECTION ================= -->
+        <section class="achievements-section" id="achievements">
+            <div class="achievements-inner">
+
+                <div class="achievements-header">
+                    <span class="section-tag">ACHIEVEMENTS</span>
+                    <h2 class="achievements-title">MILESTONES &amp; <span class="text-crimson">RECOGNITION</span></h2>
+                    <p class="achievements-sub">A collection of moments that shaped the journey — more being added soon.</p>
+                </div>
+
+                <div class="achievements-grid">
+
+                    <!-- Achievement Card 1 -->
+                    <a href="stay-tuned.html?item=Achievements" class="achievement-card">
+                        <div class="ach-icon-wrap">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="ach-lock"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="ach-title">Best Project Award</h3>
+                        <p class="ach-desc">Recognized for outstanding web development work and delivery excellence.</p>
+                        <span class="ach-status">Coming Soon</span>
+                    </a>
+
+                    <!-- Achievement Card 2 -->
+                    <a href="stay-tuned.html?item=Achievements" class="achievement-card">
+                        <div class="ach-icon-wrap">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="ach-lock"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="ach-title">Top Rated Developer</h3>
+                        <p class="ach-desc">Consistently rated top by clients for quality, speed and professionalism.</p>
+                        <span class="ach-status">Coming Soon</span>
+                    </a>
+
+                    <!-- Achievement Card 3 -->
+                    <a href="stay-tuned.html?item=Achievements" class="achievement-card">
+                        <div class="ach-icon-wrap">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <div class="ach-lock"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="ach-title">100+ Projects Completed</h3>
+                        <p class="ach-desc">Delivered over 100 successful digital projects across various industries.</p>
+                        <span class="ach-status">Coming Soon</span>
+                    </a>
+
+                    <!-- Achievement Card 4 -->
+                    <a href="stay-tuned.html?item=Achievements" class="achievement-card">
+                        <div class="ach-icon-wrap">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div class="ach-lock"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="ach-title">Freelance Excellence</h3>
+                        <p class="ach-desc">Awarded for consistent freelance performance and client satisfaction.</p>
+                        <span class="ach-status">Coming Soon</span>
+                    </a>
+
+                    <!-- Achievement Card 5 -->
+                    <a href="stay-tuned.html?item=Achievements" class="achievement-card">
+                        <div class="ach-icon-wrap">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="ach-lock"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="ach-title">UI/UX Recognition</h3>
+                        <p class="ach-desc">Praised for creating intuitive, pixel-perfect and modern UI/UX designs.</p>
+                        <span class="ach-status">Coming Soon</span>
+                    </a>
+
+                    <!-- Achievement Card 6 -->
+                    <a href="stay-tuned.html?item=Achievements" class="achievement-card">
+                        <div class="ach-icon-wrap">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="ach-lock"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="ach-title">Open Source Contributor</h3>
+                        <p class="ach-desc">Active contributor to open source projects on GitHub and the dev community.</p>
+                        <span class="ach-status">Coming Soon</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT CTA SECTION ================= -->
+        <section class="cta-contact-section" id="contact">
+            <div class="cta-contact-grid">
+                <!-- Left: Big CTA Heading -->
+                <div class="cta-left">
+                    <span class="cta-subheading">LET'S BUILD SOMETHING</span>
+                    <h2 class="cta-main-title">AMAZING TOGETHER!</h2>
+                    <p class="cta-desc">
+                        I help businesses in India, Kolkata & worldwide build professional websites that drive results.
+                    </p>
+                </div>
+
+                <!-- Center: Button & Social Icons -->
+                <div class="cta-center">
+                    <a href="mailto:swampsarkar1515@gmail.com" class="get-in-touch-btn">
+                        <span>GET IN TOUCH</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="social-links-row">
+                        <a href="https://www.linkedin.com/in/suman-sarkar-3759523ba?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-circle" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/00Suman00" target="_blank" class="social-circle" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/0_0suman0_0" target="_blank" class="social-circle" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/00Suman_Sarkar0" target="_blank" class="social-circle" title="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Info List -->
+                <div class="cta-right">
+                    <div class="contact-info-item">
+                        <i class="fa-regular fa-envelope contact-icon"></i>
+                        <span>swampsarkar1515@gmail.com</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-location-dot contact-icon"></i>
+                        <span>India &bull; Kolkata</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-regular fa-clock contact-icon"></i>
+                        <span>Available for Freelance Projects</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TECHNOLOGIES & PLATFORMS STRIP ================= -->
+        <footer class="tech-platforms-footer">
+            <div class="tech-platforms-inner">
+                <span class="tech-header-label">TECHNOLOGIES & PLATFORMS</span>
+                
+                <div class="tech-badges-list">
+                    <div class="tech-badge">
+                        <i class="fa-brands fa-html5 html-color"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fa-brands fa-css3-alt css-color"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fa-brands fa-js js-color"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fa-brands fa-shopify shopify-color"></i>
+                        <span>Shopify</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fa-brands fa-elementor elementor-color"></i>
+                        <span>Elementor</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fa-brands fa-meta meta-color"></i>
+                        <span>Meta Ads</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ================= MAIN FOOTER ================= -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <h3 class="footer-logo">SUMAN <span class="text-crimson">SARKAR</span></h3>
+                        <p class="footer-tagline">Crafting high-converting eCommerce experiences & modern web solutions.</p>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#hero">Home</a>
+                        <a href="#about">About</a>
+                        <a href="stay-tuned.html?item=Projects">Projects</a>
+                        <a href="#about">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                    <p class="copyright">&copy; 2026 Suman Sarkar. All rights reserved.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/suman-sarkar-3759523ba?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/00Suman00" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/0_0suman0_0" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/00Suman_Sarkar0" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="#hero" class="back-to-top" title="Back to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

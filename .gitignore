@@ -1,0 +1,11 @@
+﻿# Video frames (large binary files — stored locally only)
+video_frames_24fps_png/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
