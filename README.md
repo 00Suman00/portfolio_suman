@@ -68,8 +68,9 @@ portfolio_suman/
 
 ```bash
 npx serve . -l 3000
-# Then open: http://localhost:3000
 ```
+
+Then open in your browser: **http://localhost:3000**
 
 Or simply open `index.html` directly in your browser.
 
