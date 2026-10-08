@@ -1,5 +1,14 @@
-﻿# Video frames (large binary files — stored locally only)
-video_frames_24fps_png/
+# IDE & Agent files (not needed for deployment)
+.agent/
+.agents/
+.gemini/
+.gsd/
+GSD-STYLE.md
+PROJECT_RULES.md
+VERSION
+adapters/
+model_capabilities.yaml
+scripts/
 
 # OS junk
 .DS_Store
