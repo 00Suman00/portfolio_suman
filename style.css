@@ -1,22 +1,4 @@
 /* ========================================================
-   HIDE IDE / EXTENSION OVERLAY WATERMARKS
-   ======================================================== */
-[class*="antigravity"],
-[class*="agy-"],
-[id*="antigravity"],
-[id*="agy-"],
-[class*="gemini-badge"],
-[id*="gemini-badge"],
-[class*="ai-watermark"],
-iframe[src*="gemini"],
-iframe[src*="antigravity"] {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
-
-/* ========================================================
    GLOBAL RESETS & DESIGN TOKENS
    ======================================================== */
 :root {
