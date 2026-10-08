@@ -1,15 +1,3 @@
-# IDE & Agent files (not needed for deployment)
-.agent/
-.agents/
-.gemini/
-.gsd/
-GSD-STYLE.md
-PROJECT_RULES.md
-VERSION
-adapters/
-model_capabilities.yaml
-scripts/
-
 # OS junk
 .DS_Store
 Thumbs.db
@@ -18,3 +6,15 @@ desktop.ini
 # Editor
 .vscode/
 *.swp
+
+# IDE / agent files (not needed on Vercel)
+.agent/
+.agents/
+.gemini/
+.gsd/
+adapters/
+scripts/
+GSD-STYLE.md
+PROJECT_RULES.md
+VERSION
+model_capabilities.yaml
