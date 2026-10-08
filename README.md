@@ -1,6 +1,18 @@
 # 🚀 Suman Sarkar — Portfolio Website
 
-A sleek, scroll-driven dark luxury portfolio website built with pure HTML, CSS & JavaScript.
+> **A dark luxury, scroll-driven portfolio crafted to make a bold first impression.**  
+> Built with pure HTML, CSS & JavaScript — no frameworks, just clean code and smooth animations.
+
+<div align="center">
+
+### 🌐 [Live Demo → portfoliosuman-dlvrihifa-suman-sarkar1.vercel.app](https://portfoliosuman-dlvrihifa-suman-sarkar1.vercel.app)
+
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://portfoliosuman-dlvrihifa-suman-sarkar1.vercel.app)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://portfoliosuman-dlvrihifa-suman-sarkar1.vercel.app)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://portfoliosuman-dlvrihifa-suman-sarkar1.vercel.app)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://portfoliosuman-dlvrihifa-suman-sarkar1.vercel.app)
+
+</div>
 
 ---
 
@@ -26,6 +38,7 @@ A sleek, scroll-driven dark luxury portfolio website built with pure HTML, CSS &
 | Icons      | Font Awesome 6                            |
 | Fonts      | Google Fonts (Bebas Neue, Outfit, Caveat) |
 | Animation  | Canvas API + requestAnimationFrame        |
+| Hosting    | Vercel                                    |
 
 ---
 
@@ -64,15 +77,9 @@ portfolio_suman/
 
 ---
 
-## 🚀 Running Locally
+## 🚀 Live Website
 
-```bash
-npx serve . -l 3000
-```
-
-Then open in your browser: **http://localhost:3000**
-
-Or simply open `index.html` directly in your browser.
+🔗 **[https://portfoliosuman-dlvrihifa-suman-sarkar1.vercel.app](https://portfoliosuman-dlvrihifa-suman-sarkar1.vercel.app)**
 
 ---
 
